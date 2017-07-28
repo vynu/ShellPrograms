@@ -6,5 +6,6 @@ else
 fi
 for dir in $1; do
   result="$(find "$dir" $depth -type f -name "*.$2"|wc -l)"
+   echo "$(find "$dir" $depth -type f -name "*.$2")\n"
 echo "Folder '${dir}' contains ${result} $2 files."
 done
