@@ -5,7 +5,7 @@ else
 	depth="-maxdepth 1"
 fi
 for dir in $1; do
-  result="$(find "$dir" $depth -type f -name "*.$2"|wc -l)"
-   echo "$(find "$dir" $depth -type f -name "*.$2"|df -k)\n"
-echo "Folder '${dir}' contains ${result} $2 files."
+  result="$(find "$dir" $depth -type f -name "*.$2")"
+   echo "$result\n"
+echo "Folder '${dir}' contains $result|wc -l $2 files."
 done
