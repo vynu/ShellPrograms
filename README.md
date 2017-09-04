@@ -13,11 +13,14 @@ AWS EC2 machines </br>
 
 for the sake of utility keep aws EC2 names as same as domains names .. 
 
-get AWS credentials like activation-key , secret-key:
+get AWS credentials like activation-key , secret-key: </br>
 create IAM user and get these keys of that user.
 
 
 # usage of aws_ip_to_hosts.sh
+
+install pip and python 2.7 or greater  </br>
+install using command - " pip install awscli". </br>
 
 1. install "awscli" after use "aws configure" command to confugure aws with activation-key,secret-key,default zone etc
 2. chmod 755 aws_ip_to_hosts.sh
