@@ -1,6 +1,5 @@
-#!bin/sh
+#!/bin/sh
 
-sudo su -
 
 yum update && yum upgrade
 
