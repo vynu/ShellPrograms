@@ -10,5 +10,6 @@ sudo dnf makecache
 sudo dnf -y install docker-ce
 sudo systemctl start docker
 sudo usermod -aG docker fedora
+sudo systemctl enable docker
 
 sudo dnf -y install vim
