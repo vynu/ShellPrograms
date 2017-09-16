@@ -4,9 +4,11 @@ if [ "$(uname)" == "Darwin" ]
 then
 echo "this is mac and deleting aws ec2 ips"
 sudo sed -i '' '/aws./d' /etc/hosts
+sudo sed -i '' '/docker./d' /etc/hosts
 else
 echo "other OS deleting aws ec2 ips"
 sudo sed -i '/aws./d' /etc/hosts
+sudo sed -i '/docker./d' /etc/hosts
 fi
 
 
