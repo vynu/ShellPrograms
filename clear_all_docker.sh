@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## function to clear all containers and images
 clearall(){
